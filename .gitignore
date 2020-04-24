@@ -1,0 +1,5 @@
+.env
+node_modules
+authdata.json
+.idea
+/log.txt
