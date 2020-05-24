@@ -70,6 +70,9 @@ const readAuthData = () => {
             if(err) {
                 rej(err);
             } else {
+                if(!data.toString().length) {
+                    return rej('Error data is empty!')
+                }
                 res(JSON.parse(data.toString()));
             }
         });
